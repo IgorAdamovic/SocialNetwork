@@ -1,0 +1,91 @@
+<div class="panel panel-primary" *ngIf="member">
+  <!-- (click)="handleClick()" -->
+  <div class="panel-heading">
+    <h3 class="panel-title">Profile</h3>
+  </div>
+  <div class="panel-body">
+    <div class="col-xs-10">
+      <div class="row vertical-align">
+        <div class="col-xs-8">
+          <div class="row">
+            <div class="col-xs-6">
+              <img [src]="profilePhoto" class="img-responsive profilePicture">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-xs-6">
+              Firstname: {{member.firstName}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Surname: {{member.surname}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Age: {{member.age}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Gender: {{member.gender}}
+            </div>
+          </div>
+          <br><br>
+          <div class="row">
+            <div class="col-xs-4">
+              <table class="table table-bordered table-striped" *ngIf="friends && friends.length">
+                <thead>
+                  <tr class="bg-primary">
+                    <th>Friends</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let friend of friends">
+                    <td class="cursor-pointer" (click)="openFriendsOfFriendsTable(friend.id)">
+                      {{friend.firstName + " " + friend.surname}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-xs-4">
+              <table class="table table-bordered table-striped" *ngIf="friendsOfFriends && friendsOfFriends.length">
+                <thead>
+                  <tr class="bg-primary">
+                    <th>{{membersFriend.firstName + " " + membersFriend.surname  + "'s " + "friends"}}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let friendsOfFriend of friendsOfFriends">
+                    <td>{{friendsOfFriend.firstName + " " + friendsOfFriend.surname }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-xs-4">
+              <table class="table table-bordered" *ngIf="suggestedFriends && suggestedFriends.length">
+                <thead>
+                  <tr class="bg-primary">
+                    <th>Suggested Friends</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let suggestedFriend of suggestedFriends">
+                    <td>{{suggestedFriend.firstName + " " + suggestedFriend.surname}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer">
+    <a class="btn btn-primary" [routerLink]="['/list']">
+      Back to List
+    </a>
+  </div>
+</div>

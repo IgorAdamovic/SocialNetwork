@@ -1,0 +1,8 @@
+.brand-name {
+    color: white;
+    text-decoration: none;
+}
+
+.brand-name:active, brand-name:visited {
+    color: white;
+}
