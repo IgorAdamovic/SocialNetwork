@@ -29,7 +29,9 @@ General Requirements:
 ## Running the project
 
 To run the project:
+
 • Start the backend, following the instructions in the BackEnd section
+
 • Start the frontend, following the instructions in the Development server section 
 
 ## BackEnd
