@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## About the project
 
-This project is made as a part of the interview process for the http://30hills.com/ 2019 spring internship program.
+This project is made as a part of the interview process for the <a href="http://30hills.com/">30hills</a> 2019 spring internship program.
 
 ### The Problem 
 
