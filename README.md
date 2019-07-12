@@ -1,10 +1,10 @@
-# SocialNetwork
+## SocialNetwork
 
 An Interview Test Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
 
-# About the project
+## About the project
 
 This project is made as a part of the interview process for the http://30hills.com/ 2019 spring internship program.
 
@@ -21,7 +21,7 @@ General Requirements:
 • You can use any software design patterns you think are appropriate for the implementation.
 • You can use any programming language, but solutions in JavaScript will have advantage.
 
-# Running the project
+## Running the project
 
 To run the project:
 • Start the backend, following the instructions in the BackEnd section
