@@ -36,7 +36,7 @@ To run the project:
 
 ## BackEnd
 
-To run the backend, open a command line in this folder and run: json-server --watch data.json 
+To run the backend, open a command line in this folder and run: `json-server --watch data.json` 
 
 Get a full fake REST API from https://github.com/typicode/json-server and install JSON server if backend service doesn't start.
 
