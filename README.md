@@ -28,19 +28,13 @@ General Requirements:
 
 ## Running the project
 
-To run the project:
-
-• Start the backend, following the instructions in the BackEnd section
-
-• Start the frontend, following the instructions in the Development server section 
-
-## BackEnd
+### BackEnd
 
 To run the backend, open a command line in this folder and run: `json-server --watch data.json` 
 
 Get a full fake REST API from https://github.com/typicode/json-server and install JSON server if backend service doesn't start.
 
-## Development server
+### Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
